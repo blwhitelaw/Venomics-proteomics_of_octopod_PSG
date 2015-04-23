@@ -30,6 +30,7 @@ refine_table <- function(data, length, pro_prob, cys, tis) {
 
 ref_toxin_table <- refine_table(toxin, 500, 0.99, 3, "PSG")
 
+all_0.99 <- toxin[which(toxin$protein_probability > 0.99)]
 
 
 get_fasta_n_tab <- function(ref_toxin_table, file_name) {
@@ -47,4 +48,9 @@ write.fasta(sequences = as.list(ref_toxin_table$peptide),
 	file.out = paste(c(file_name, ".fasta"), collapse = ""), open = "w", nbchar = 80)
 
 }
+
+
+#get_fasta_n_tab(ref_toxin_table, "bro_psg_tox_list")
+#get_fasta_n_tab(all_0.99, "bro_0.99")
+
 

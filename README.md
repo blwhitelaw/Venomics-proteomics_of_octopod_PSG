@@ -1,4 +1,4 @@
-# thesis_putative_toxin_id
+# Scipts used in the publication "Combined transcriptomic and proteomic analysis of the posterior salivary gland from the southern blue-ringed octopus and the southern sand octopus"
 
 ##
 1. `Venn_all_0.99_proteins.R` generates a venn diagram from two species using SwissPrott identifiers as a proxy for protein function  
